@@ -1,0 +1,304 @@
+/* ==============================
+   GLOBAL STYLES
+============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #0a0f1f, #02040a);
+  color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ==============================
+   CONTAINERS
+============================== */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #00b4d8;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* ==============================
+   HEADER
+============================== */
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(10, 15, 31, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00b4d8;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.brand:hover {
+  color: #48cae4;
+}
+
+.site-nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.site-nav a:hover {
+  color: #00b4d8;
+}
+
+/* ==============================
+   BUTTONS
+============================== */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background: #00b4d8;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #0096c7;
+}
+
+.btn.ghost {
+  border: 2px solid #00b4d8;
+  color: #00b4d8;
+}
+
+.btn.ghost:hover {
+  background: #00b4d8;
+  color: #fff;
+}
+
+.btn.small {
+  font-size: 0.9rem;
+  padding: 8px 16px;
+}
+
+/* ==============================
+   HERO SECTION
+============================== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.hero-inner {
+  max-width: 700px;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.hero-title .accent {
+  color: #00b4d8;
+}
+
+.hero-sub {
+  font-size: 1.3rem;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.hero-lead {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.hero-ctas a {
+  margin: 0 10px;
+}
+
+/* ==============================
+   ABOUT SECTION
+============================== */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 40px;
+}
+
+.about p {
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.subhead {
+  color: #00b4d8;
+  font-size: 1.2rem;
+  margin: 30px 0 10px;
+  font-weight: 600;
+}
+
+.skills-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* ==============================
+   PROJECTS SECTION
+============================== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  border-radius: 16px;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 180, 216, 0.2);
+}
+
+.project-card h4 {
+  color: #00b4d8;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #ddd;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.card-buttons a {
+  margin-right: 10px;
+}
+
+/* ==============================
+   CONTACT SECTION
+============================== */
+.contact-inner {
+  text-align: center;
+}
+
+.contact-link {
+  display: block;
+  color: #00b4d8;
+  text-decoration: none;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.contact-cta a {
+  margin: 10px;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+.site-footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ==============================
+   SCROLL REVEAL ANIMATION
+============================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .site-nav a {
+    margin: 8px;
+  }
+
+  .section {
+    padding: 70px 0;
+  }
+}
